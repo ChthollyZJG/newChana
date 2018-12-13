@@ -1,34 +1,46 @@
 <map id='map' class="map" scale="{{mapScale}}" show-location="true" longitude="{{userLng}}" latitude="{{userLat}}" markers="{{fujinMarkers}}">
-    <cover-view class="contanir">
+    <cover-view class="contanir" bindtouchstart='recordStart' bindtouchend='recordEnd'>
         <cover-view class="headers mine">
             <cover-image src="/assets/my.png" class="headers_bg"></cover-image>
+            <cover-image src="/assets/wl.png" class="user_header"></cover-image>
+            <cover-view class="name">威廉</cover-view>
         </cover-view>
         <cover-view class="headers header_box">
             <cover-view style="transform: translateX({{moved}}rpx)" class="content">
                 <cover-view class="headers">
                     <cover-image src="/assets/nowatch.png" class="headers_bg"></cover-image>
+                    <cover-image src="/assets/kdl.png" class="user_header"></cover-image>
                     <cover-view class="name">{{moved}}</cover-view>
                 </cover-view>
                 <cover-view class="headers">
                     <cover-image src="/assets/nowatch.png" class="headers_bg"></cover-image>
+                    <cover-image src="/assets/kdl.png" class="user_header"></cover-image>
                     <cover-view class="name">{{moved}}</cover-view>
                 </cover-view>
                 <cover-view class="headers">
                     <cover-image src="/assets/nowatch.png" class="headers_bg"></cover-image>
+                    <cover-image src="/assets/wl.png" class="user_header"></cover-image>
                     <cover-view class="name">{{moved}}</cover-view>
                 </cover-view>
                 <cover-view class="headers">
                     <cover-image src="/assets/haswatch.png" class="headers_bg"></cover-image>
+                    <cover-image src="/assets/kdl.png" class="user_header"></cover-image>
                     <cover-view class="name">{{moved}}</cover-view>
                 </cover-view>
                 <cover-view class="headers">
                     <cover-image src="/assets/haswatch.png" class="headers_bg"></cover-image>
+                    <cover-image src="/assets/wl.png" class="user_header"></cover-image>
                     <cover-view class="name">{{moved}}</cover-view>
                 </cover-view>
             </cover-view>
-            <cover-view bindtap='toleft' class="toleft">左</cover-view>
-            <cover-view bindtap='toright' class="toright">右</cover-view>
-            <cover-view class="name">{{moved}}</cover-view>
         </cover-view>
     </cover-view>
+
+    <cover-image src="/assets/shuaxin.png" bindtap='refresh' class="refresh"></cover-image>
+    <cover-image src="/assets/addnew.png" class="addNew"></cover-image>
+    <cover-image src="/assets/guiwei.png" bindtap='goBack' class="guiwei"></cover-image>
 </map>
+
+<!-- <video src=""></video> -->
+
+<canvas id="canvas1" canvas-id='canvas1'></canvas>

@@ -1,2 +1,63 @@
-<!--pages/mine/mine.wxml-->
-<text>pages/mine/mine.wxml</text>
+<view class="tophead">
+    <view class='headerview'>
+      <image src="/assets/wl.png" class="header" />
+    </view>
+    <view class="name">supermen123</view>
+</view>
+<view class="middle">
+    <view class="chanaID">刹那ID: supermen</view>
+    <view class="gz">关注 327</view>
+    <view class="lines"></view>
+    <view class="fans">粉丝 103</view>
+</view>
+<scroll-view scroll-x='true' class="chanas">
+    <!-- 判断条件是否显示(master) -->
+    <view class="master">
+        <image class="master_bg" src="/assets/wo_tianjia.png" />
+        <image class='chana_add' src='/assets/tianjia_2.png'></image>
+    </view>
+    <!-- 以下循环 -->
+    <view class="master">
+      <image class="master_bg" src="/assets/wo_tianjia.png" />
+      <image class='chana_pic' src='/assets/kdl.png'></image>
+    </view>
+    <view class="master">
+      <image class="master_bg" src="/assets/wo_tianjia.png" />
+      <image class='chana_pic' src='/assets/wl.png'></image>
+    </view>
+    <view class="master">
+      <image class="master_bg" src="/assets/wo_tianjia.png" />
+      <image class='chana_pic' src='/assets/wl.png'></image>
+    </view>
+    <view class="master">
+      <image class="master_bg" src="/assets/wo_tianjia.png" />
+      <image class='chana_pic' src='/assets/wl.png'></image>
+    </view>
+    <view class="master">
+      <image class="master_bg" src="/assets/wo_tianjia.png" />
+      <image class='chana_pic' src='/assets/wl.png'></image>
+    </view>
+    <view class="master">
+      <image class="master_bg" src="/assets/wo_tianjia.png" />
+      <image class='chana_pic' src='/assets/wl.png'></image>
+    </view>
+    <view class="master">
+      <image class="master_bg" src="/assets/wo_tianjia.png" />
+      <image class='chana_pic' src='/assets/wl.png'></image>
+    </view>
+</scroll-view>
+<view class='actions'>
+  搜索用户
+  <image src='' class='next'></image>
+</view>
+<view class='actions'>
+  扫一扫（当面互关）
+  <image src='' class='next'></image>
+</view>
+
+<!-- 非组件标签 -->
+<button class='updateinfo'>编辑个人资料</button>
+<view class='actions'>
+  设置
+  <image src='' class='next'></image>
+</view>

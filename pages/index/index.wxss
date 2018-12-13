@@ -2,22 +2,16 @@
     width: 100%;
     height: 100%;
 }
-
+/* 顶部容器 */
 .contanir {
     margin: 40rpx 13rpx 0 13rpx;
     height: 200rpx;
     position: relative;
     display: flex;
 }
-.content {
-    position: absolute;
-    left: 0rpx;
-    top: 0;
-    height: 100%;
-    transition: all .5s;
-}
-.headers.header_box {
-    flex: 1;
+/* 我的刹那 */
+.mine {
+    margin-right: 34rpx;
 }
 .headers {
     width: 138rpx;
@@ -26,33 +20,33 @@
     display: inline-block;
     position: relative;
 }
-.mine {
-    margin-right: 34rpx;
+.headers.header_box {
+    flex: 1;
 }
-
+.user_header {
+    width: 98rpx;
+    height: 98rpx;
+    border-radius: 50%;
+    position: absolute;
+    top: 32rpx;
+    left: 19rpx;
+}
+/* 好友 */
+.content {
+    position: absolute;
+    left: 0rpx;
+    top: 0;
+    height: 100%;
+    transition: all .5s;
+}
 .headers_bg {
     width: 112rpx;
     height: 112rpx;
     position: absolute;
     top: 26rpx;
     left: 13rpx;
-    
 }
 
-.toleft {
-    position: absolute;
-    height: 100%;
-    width: 50rpx;
-    background-color: skyblue;
-    left: 0;
-}
-.toright {
-    position: absolute;
-    height: 100%;
-    width: 50rpx;
-    background-color: skyblue;
-    right: 0;
-}
 
 .name {
     position: absolute;
@@ -61,4 +55,40 @@
     line-height: 22rpx;
     width: 100%;
     text-align: center;
+}
+
+/* video {
+    position: absolute;
+    bottom: 0;
+} */
+
+.refresh {
+    width: 100rpx;
+    height: 100rpx;
+    position: absolute;
+    left: 30rpx;
+    bottom: 46rpx;
+}
+.guiwei {
+    width: 100rpx;
+    height: 100rpx;
+    position: absolute;
+    right: 30rpx;
+    bottom: 46rpx;
+}
+.addNew {
+    width: 132rpx;
+    height: 132rpx;
+    position: absolute;
+    bottom: 30rpx;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#canvas1 {
+    position: absolute;
+    left: 9999px;
+    top: 0;
+    width: 106px;
+    height: 106px;
 }
